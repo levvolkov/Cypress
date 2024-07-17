@@ -1,0 +1,19 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test1": "npx cypress open",
+    "laptop:headless": "npx cypress run -b chrome -C cypress.config.js",
+    "laptop:headed": "npx cypress run -b edge --headed -C cypress.config.js",
+    "mobile:headless": "npx cypress run -b edge -C cypress.mobile.config.js",
+    "mobile:headed": "npx cypress run -b chrome --headed -C cypress.mobile.config.js"
+  },
+  "author": "Lev Volkov",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.3.0"
+  }
+}
